@@ -1,0 +1,4 @@
+doc_id_a,doc_id_b,exact_jaccard,minhash_similarity,simhash_similarity,simhash_hamming_distance,passes_minhash_threshold,passes_simhash_threshold
+doc_01,doc_04,1.0,1.0,1.0,0,True,True
+doc_01,doc_07,0.7407407407407407,0.7578125,0.796875,13,True,True
+doc_04,doc_07,0.7407407407407407,0.7578125,0.796875,13,True,True

@@ -1,0 +1,3 @@
+method,threshold,accuracy,precision,recall,f1,tp,fp,tn,fn,avg_time_ms
+MinHash_similarity_threshold,0.25,0.9,1.0,0.8,0.888888888888889,4,0,5,1,0.8797899999990477
+TFIDF_weighted_SimHash,0.75,0.8,1.0,0.6,0.7499999999999999,3,0,5,2,0.8797899999990477

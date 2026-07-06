@@ -1,0 +1,1 @@
+Chemical process simulation helps engineers estimate mass balances, energy duties, equipment sizes, and operating conditions before a plant is built. The focus is process design rather than document similarity.

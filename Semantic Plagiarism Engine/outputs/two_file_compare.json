@@ -1,0 +1,12 @@
+{
+  "file_a": "data/sample_corpus/doc_01.txt",
+  "file_b": "data/sample_corpus/doc_02.txt",
+  "shingle_size": 3,
+  "num_perm": 128,
+  "exact_jaccard": 0.2564102564102564,
+  "minhash_similarity": 0.265625,
+  "simhash_similarity": 0.734375,
+  "simhash_hamming_distance": 17,
+  "num_shingles_a": 24,
+  "num_shingles_b": 25
+}

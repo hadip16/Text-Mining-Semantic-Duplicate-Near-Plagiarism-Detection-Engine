@@ -1,0 +1,19 @@
+Semantic Plagiarism Engine CLI Demo
+===================================
+
+1) Compare two files
+python -m plagiarism_engine.cli compare --file-a data/sample_corpus/doc_01.txt --file-b data/sample_corpus/doc_02.txt --output outputs/two_file_compare.json
+
+2) Search similar documents in a folder with MinHash + LSH
+python -m plagiarism_engine.cli corpus --data data/sample_corpus --threshold 0.25 --shingle-size 3 --output outputs/candidates.csv
+
+3) Evaluate labelled pair CSV
+python -m plagiarism_engine.cli pairs --pairs data/raw/train.csv --text-col-a question1 --text-col-b question2 --label-col is_duplicate --limit 5000 --output outputs/metrics.csv --predictions-output outputs/pair_predictions.csv
+
+4) Prepare PAN-PC-11 after local extraction
+python -m plagiarism_engine.cli prepare-pan11 --pan-root data/raw/pan11 --output data/processed/pan11_pairs.csv --max-positive 5000 --negatives-per-positive 1 --segment-mode annotated
+
+5) Evaluate PAN-PC-11 pair file
+python -m plagiarism_engine.cli pairs --pairs data/processed/pan11_pairs.csv --text-col-a text_a --text-col-b text_b --label-col label --limit 5000 --output outputs/metrics_pan11.csv --predictions-output outputs/pair_predictions_pan11.csv
+
+Tests: 6 passed

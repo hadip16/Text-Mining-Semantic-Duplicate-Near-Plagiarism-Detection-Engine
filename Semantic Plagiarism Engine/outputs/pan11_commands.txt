@@ -1,0 +1,23 @@
+# Commands to run after extracting PAN-PC-11 locally under data/raw/pan11
+
+python -m plagiarism_engine.cli prepare-pan11 \
+  --pan-root data/raw/pan11 \
+  --output data/processed/pan11_pairs.csv \
+  --max-positive 5000 \
+  --negatives-per-positive 1 \
+  --segment-mode annotated
+
+python -m plagiarism_engine.cli pairs \
+  --pairs data/processed/pan11_pairs.csv \
+  --text-col-a text_a \
+  --text-col-b text_b \
+  --label-col label \
+  --limit 5000 \
+  --output outputs/metrics_pan11.csv \
+  --predictions-output outputs/pair_predictions_pan11.csv
+
+python -m plagiarism_engine.cli corpus \
+  --data data/raw/pan11/external-detection-corpus \
+  --threshold 0.25 \
+  --shingle-size 3 \
+  --output outputs/candidates_pan11.csv

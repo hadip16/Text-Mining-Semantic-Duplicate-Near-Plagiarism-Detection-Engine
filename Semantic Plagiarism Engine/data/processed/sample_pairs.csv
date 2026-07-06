@@ -1,0 +1,11 @@
+question1,question2,is_duplicate
+"A plagiarism engine detects copied or slightly rewritten documents with word shingles and MinHash.","A plagiarism engine detects copied or slightly rewritten documents using word shingles and MinHash.",1
+"MinHash estimates Jaccard similarity by comparing equal positions in two signature vectors.","MinHash estimates Jaccard similarity by comparing matching positions in signature vectors.",1
+"Locality sensitive hashing reduces all to all comparisons by grouping similar signatures into buckets.","LSH reduces all to all comparisons by grouping similar MinHash signatures into buckets.",1
+"TF IDF weighted SimHash represents similar texts with a small Hamming distance.","TF IDF weighted SimHash represents similar documents with low Hamming distance.",1
+"Precision recall and F1 are common metrics for duplicate document detection.","Precision recall and F1 score are common evaluation metrics for duplicate detection.",1
+"How do I cook pasta with tomato sauce?","What is locality sensitive hashing for documents?",0
+"The capital of France is Paris.","Chemical reactors convert raw materials into products.",0
+"Cats are playful animals that like sleeping in warm places.","Database indexes can speed up search queries.",0
+"Weather forecasting models predict rain and temperature.","A plagiarism engine creates shingles from documents.",0
+"Neural networks learn parameters from training data.","A heat exchanger transfers thermal energy between streams.",0

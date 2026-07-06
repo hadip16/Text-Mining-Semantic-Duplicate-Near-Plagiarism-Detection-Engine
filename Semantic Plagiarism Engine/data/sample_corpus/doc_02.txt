@@ -1,0 +1,1 @@
+Data mining systems need to detect copied and slightly rewritten documents. A plagiarism engine transforms each document into word shingles, estimates Jaccard similarity with MinHash, and uses locality sensitive hashing to reduce comparisons.
